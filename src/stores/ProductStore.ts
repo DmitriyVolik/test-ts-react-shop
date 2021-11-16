@@ -5,10 +5,10 @@ class ProductStore {
     constructor () {
         makeAutoObservable(this)
         setTimeout(() => {
-            this.products.push(new Product('p1'))
+            this.products.push(new Product('p1', 70.50, "37-42"))
         }, 3000)
         setTimeout(() => {
-            this.products.push(new Product('p2'))
+            this.products.push(new Product('p2',50, "37-41"))
         }, 6000)
     }
 }

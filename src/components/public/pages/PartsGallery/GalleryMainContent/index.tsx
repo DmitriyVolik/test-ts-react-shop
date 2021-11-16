@@ -8,7 +8,12 @@ const GalleryMainContent: React.FC = observer(
                 <div id="products-list">
                     {
                         productStore.products.map(
-                            product => <div key={product.name}>{product.name}</div>
+                            product =>
+                                <>
+                                    <div key={product.name}>{product.name}</div>
+                                    <div key={product.price}>{product.price}</div>
+                                    <div key={product.size}>{product.size}</div>
+                                </>
                         )
                     }
                 </div>
